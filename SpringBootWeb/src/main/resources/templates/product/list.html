@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>商品一覧</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  商品一覧
+  <table border="1">
+    <tr>
+      <th style="background-color:#CCCCCC">Code</th>
+      <th style="background-color:#CCCCCC">商品名</th>
+      <th style="background-color:#CCCCCC">金額</th>
+    </tr>
+    <tr  th:each="product: ${productList}">
+      <td  th:text="${product.productCode}">1</td>
+      <td  th:text="${product.productName}">ダミー商品</td>
+      <td  th:text="${product.price}">50</td>
+    </tr>
+  </table>
+</body>
+</html>
