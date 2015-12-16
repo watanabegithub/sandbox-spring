@@ -1,6 +1,7 @@
 # My sandbox(spring) projects.
 
 ## SpringBootWeb
+Sample web application.
 
 ## SpringBootWeb-login
 
